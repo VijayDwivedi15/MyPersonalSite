@@ -1,0 +1,274 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Vijay Dwivedi, Vijay Dwivedi Raipur, Software Developer, Software Developers in Raipur, Best Software Developers, Best Software Developers in Raipur, Vijay Dwivedi Software Developer,Vijay Dwivedi Software Developer Raipur, NVC Developers Raipur, .NET Developers Raipur, .NET Developers" />
+    <meta name="description" content="This is My Personal Web Info shows my Bio, Education, Experience, Knowledge and More" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/lightcase.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <script src="js/jquery-2.2.3.min.js"></script>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- //web-fonts -->
+</head>
+<body>
+    <!-- banner -->
+    <div class="banner about-w3banner">
+        <div class="banner-w3lsinfo">
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="logo">
+
+                    </div>
+                    <div class="menu">
+                        <a href="#" class="navicon"></a>
+                        <div class="toggle effect-3">
+                            <ul class="toggle-menu">
+                                <li><a href="@Url.Action("Index","Home")"> Home</a></li>
+                                <li><a href="@Url.Action("About","Home")"> About</a></li>
+                                <li><a href="@Url.Action("Skill","Home")"> Skills</a></li>
+                                <li><a href="@Url.Action("Experience","Home")">Experience</a></li>
+                                <li><a href="@Url.Action("Education","Home")">Education</a></li>
+                                <li><a href="@Url.Action("Project","Home")"> My Projects</a></li>
+                                <li><a href="@Url.Action("Contact","Home")" class="active"> Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-w3licon">
+                        <a href="https://twitter.com/vijaydwivedi125" class="social-button twitter" style="color:cornflowerblue;font-size:larger"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/vijay.dwivedi.7792" class="social-button facebook"><i class="fa fa-facebook" style="color:darkslateblue; font-size:larger"></i></a>
+                        <a href="https://in.linkedin.com/in/vijay-dwivedi-97522b136" class="social-button googleplus" style="color:#0077B5; font-size:larger"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vijaydwivedi15/" class="social-button dribbble"><i class="fa fa-instagram" style="font-size:larger;color:#ff794d"></i></a>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!-- //header -->
+            <div class="w3agile-address">
+                <div class="container">
+                    <ul>
+                        <li><i class="fa fa-map-marker" style="color:red" aria-hidden="true"></i>Raipur, Chhattisgarh</li>
+                        <li><i class="fa fa-phone" style="color:#1ac7c2" aria-hidden="true"> </i>  +91-7898224788</li>
+                        <li><i class="fa fa-envelope" style="color:#f6543d" aria-hidden="true"></i><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=vijaydwivedi125@gmail.com" target="_blank"> vijaydwivedi125@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- contact -->
+
+    @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { id = "Contact", role = "form" }))
+            {
+
+        <section>
+            <div class="about contact">
+
+
+                <div class="container">
+                    <div class="w3ls-title">
+                        <h2 class="agileits-title" style="font-family:'Playfair Display', serif">Contact Me</h2>
+                    </div>
+
+
+
+                    <div class="contact-agileinfo">
+                        <div class="col-md-7 w3agile-contact-grids">
+                            <div class="ctact-w3left">
+                                <form id="contact" action="" method="post" role="form">
+                                    <span>
+                                        <i style="margin-left:-18px;">Name</i>
+                                       <input type="text" name="Name" id="Name" class="form-control" placeholder="" required="" style="margin-left:15px;">
+                                    </span>
+                                    <span>
+                                        <i style="margin-left:-18px;">Email</i>
+                                        <input type="email" name="Email" id="Email" class="form-control" placeholder="" required="" style="margin-left:15px;">
+                                    </span>
+                                    <span>
+                                        <i style="margin-left:-18px;">Mobile</i>
+                                        <input type="text" name="Mobile" id="Mobile" class="form-control" placeholder="" required="" maxlength="10" onkeypress="return IsInputNumber(event)" style="margin-left:15px;">
+                                    </span>
+                                    <span>
+                                        <i style="margin-left:-18px;">Message</i>
+                                        <textarea name="Message" placeholder="" id="Message" class="form-control" required="" style="margin-left:20px;"></textarea>
+                                    </span>
+                                    <div class="w3_submit">
+                                        <input type="submit" class="button" id="ContactSubmit" />
+                                        <!-- <a href="thankyou.html" class="btn btn-primary" type="submit" >Submit</a> -->
+
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 w3agile-contact-grids">
+                            <p style="color:brown">Fell free to contact me.</p>
+                            <div class="profile-grids">
+                                <h5>Contact Info</h5>
+                                <ul>
+                                    
+                                    <li>
+                                        <b>E-MAIL</b> : <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=vijaydwivedi125@gmail.com" target="_blank">vijaydwivedi125@gmail.com</a> 
+                                    </li>
+                                    <li>
+                                        <b>ADDRESS</b> : Raipur, Chhattisgarh, INDIA
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="profile-grids">
+                                <h5>Social Media Info</h5>
+                                <ul>
+                                    
+                                    <li>
+                                        <b>LINKDIN</b> : <a href="https://www.linkedin.com/in/vijay-dwivedi-97522b136/">linkedin.com/vijaydwivedi</a>
+                                    </li>
+                                    <li>
+                                        <b>TWITTER</b> : <a href="https://twitter.com/vijaydwivedi125">teitter.com/vijaydwivedi125</a>
+                                    </li>
+                                    <li>
+                                        <b>FACEBOOk</b> : <a href="https://www.facebook.com/vijay.dwivedi.7792"> facebook.com/vijaydwivedi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+    }
+    
+   
+    @Html.Hidden("RedirectToHome", Url.Action("ThankYou", "Home"))
+    @Html.Hidden("RedirectToWrong", Url.Action("Contact", "Home"))
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Scripts/sweetalert.css" rel="stylesheet" />
+    <script src="~/Scripts/sweetalert.js"></script>
+
+
+
+    <script type="text/javascript">
+    $(function() {
+        var msg='@TempData["example"]';
+        if(msg=='Succeeded') {
+            sweetAlert({
+                title: "Succeeded!",
+                text: "Your Message Send SUCCESSFULLY.",
+                type: "success"
+            },
+                                  function() {
+                                      var url=$("#RedirectToHome").val();
+                                      location.href=url;
+                                  });
+
+        }
+
+        else if (msg =='UnSucceeded')
+        {
+            sweetAlert({
+                title: "Warning!",
+                text: "Something Went WRONG ! Try Again.",
+                type: "error"
+            },
+                function () {
+                    var url = $("#RedirectToWrong").val();
+                    location.href = url;
+                });
+        }
+
+        else {
+
+
+        }
+    });
+
+    </script>
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    <!-- //contact -->
+    <!-- footer -->
+        <div class="w3agile-footer">
+            <div class="container">
+                <p>© 2020 All rights reserved | Design by <a href="#" target="_blank">VijayDwivedi.</a></p>
+            </div>
+        </div>
+
+        <script>
+
+            function IsInputNumber(evt) {
+                var charCode = (evt.which) ? evt.which : event.keyCode
+                if (charCode > 31 && (charCode < 48 || charCode > 57))
+                    return false;
+                return true;
+            }
+
+        </script>
+
+
+    <!-- //footer -->
+    <!-- menu-js -->
+        <script>
+            $('.navicon').on('click', function (e) {
+                e.preventDefault();
+                $(this).toggleClass('navicon--active');
+                $('.toggle').toggleClass('toggle--active');
+
+            });
+        </script>
+
+        <script src="js/bootstrap.js"></script>
+
+        <script src="~/js/jquery-2.2.3.min.js"></script>
+        <script src="~/js/jquery.events.touch.js"></script>
+        <script src="~/js/lightcase.js"></script>
+        <script src="~/js/skill.bars.jquery.js"></script>
+    </body>
+</html>
